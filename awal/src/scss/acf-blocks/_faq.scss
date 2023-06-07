@@ -1,0 +1,102 @@
+
+body.page-faq{
+  background: $color-white;
+}
+.faqs {
+  .container {
+    padding: 0 0 140px;
+    @include phone-down {
+      padding: 0 0 100px
+    }    
+  }
+  
+  .container-alt {
+    @include phone-down {
+      width: 100%
+    }
+  }
+  .faq-row {
+    position: relative;
+    max-width: 773px;
+    margin: 0 0 100px;
+    &:last-child {
+      margin: 0
+    }
+    h6 {
+      font-size: rem(34px);
+      line-height: 1.24;
+      letter-spacing: -.9px;
+      margin: 0 0 35px
+    }
+    ul{
+      &:after {
+        line-height: 0;
+        height: 0;
+        display: block;
+        content: '';
+        clear: both
+      }
+      li {
+        position: relative;
+        border-top: 1px solid #979797;
+        &:last-child {
+          border-bottom: 1px solid #979797;
+        }
+        &.open .faq-title p:after {
+          -webkit-transform: translateY(-50%) rotate(90deg);
+          -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg)
+        }
+        .faq-title {
+          position: relative;
+          cursor: pointer;
+          padding: 22px 0 30px;
+          p {
+            position: relative;
+            font-size: rem(24px);
+            line-height: 1.17;
+            letter-spacing: -.6px;
+            padding-right: 30px;
+            font-weight: bold;
+            &:after,
+            &:before {
+              content: '';
+              display: block;
+              right: 0;
+              width: 20px;
+              height: 2px;
+              background-color: #000;
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              -webkit-transition: all .2s ease-out;
+              -o-transition: all .2s ease-out;
+              transition: all .2s ease-out
+            }
+            &:after {
+              width: 2px;
+              height: 20px;
+              right: 9px;
+            }
+          }
+        }
+        .faq-text {
+          display: none;
+          p {
+            font-size: rem(18px);
+            line-height: 1.56;
+            letter-spacing: -.2px;
+            margin: 0 0 30px;
+            font-family: "Maison Neue Book", sans-serif;
+            strong {
+              font-family: "Maison Neue", sans-serif;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

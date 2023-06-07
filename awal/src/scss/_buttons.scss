@@ -1,0 +1,65 @@
+.btn {
+	display: inline-block;
+	font-family: $font-primary;
+	font-size: rem(16px);
+	font-weight: 400;
+	line-height: 1;
+	padding: rem(15px) rem(20px);
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+
+	&.btn-black {
+		background: $color-black;
+		border: 2px solid $color-black;
+		color: $color-white;
+
+		@include hover-focus {
+			background: $color-white;
+			color: $color-black;
+		}
+	}
+
+	&.btn-black-border {
+		background: $color-white;
+		border: 2px solid $color-black;
+		color: $color-black;
+
+		@include hover-focus {
+			background: $color-black;
+			color: $color-white;
+		}
+	}
+}
+
+.wp-block-button {
+	
+	@include phone-down{
+		width: 100%;
+	}
+	.wp-block-button__link {
+		background: $color-black;
+		border: 2px solid $color-black;
+		border: 0;
+		border-radius: 0;
+		color: $color-white;
+		display: inline-block;
+		font-family: $font-primary;
+		font-size: rem(16px);
+		font-weight: 400;
+		line-height: 1;
+		padding: rem(15px) rem(20px);
+		text-align: center;
+		text-transform: uppercase;
+		vertical-align: middle;
+
+		@include hover-focus {
+			background: $color-white !important;
+			color: $color-black !important;
+		}
+		
+		@include phone-down{
+			width: 100%;
+		}
+	}
+}

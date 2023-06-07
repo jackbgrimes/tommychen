@@ -1,0 +1,394 @@
+{
+    "key": "group_634db36a791e9",
+    "title": "Block: Home Artists Grid",
+    "fields": [
+        {
+            "key": "field_634de4e3f3f46",
+            "label": "Artists Grid",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_634db5152fdbf",
+            "label": "Artists",
+            "name": "home_artists_grid",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_634db5b26f741",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Video": "Video",
+                        "Tweet": "Tweet",
+                        "Playlist": "Playlist",
+                        "Instagram": "Instagram",
+                        "Other": "Other"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db61b6f742",
+                    "label": "Size",
+                    "name": "size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Large": "Large",
+                        "Medium": "Medium",
+                        "Small": "Small"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db7dfd32b9",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Playlist"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Instagram"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Other"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db856d32bd",
+                    "label": "Sub Title",
+                    "name": "sub_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Playlist"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Instagram"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Other"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db88b363cc",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Other"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Instagram"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "thumbnail",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db8d5f77c9",
+                    "label": "Tweet Information",
+                    "name": "tweet_information",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Tweet"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db91bf77ca",
+                    "label": "Tweet Username",
+                    "name": "tweet_username",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Tweet"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db6a983048",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Tweet, Youtube Video, Playlist, Instagram link",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db9669bfbb",
+                    "label": "Playlist Title",
+                    "name": "playlist_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Playlist"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                },
+                {
+                    "key": "field_634db9809bfbc",
+                    "label": "Playlist Followers",
+                    "name": "playlist_followers",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634db5b26f741",
+                                "operator": "==",
+                                "value": "Playlist"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_634db5152fdbf"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/home-artists-grid"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1666056527
+}

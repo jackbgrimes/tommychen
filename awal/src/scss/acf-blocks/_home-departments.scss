@@ -1,0 +1,47 @@
+.departments-module-v2 {
+  background: #e3e1e6;
+  padding: 10% 0 14%;
+  color: #141414;
+  background-image: url('../img/noise-overlay-pattern_2-400.png');
+  background-size: 200px;
+    
+  &__title {
+    max-width: 830px;
+    margin-bottom: 32px;
+    font-size: calc(42px + 22 * (100vw - 320px) / 1120);
+    line-height: calc(42px + 22 * (100vw - 320px) / 1120);
+    font-weight: bold;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 102px;
+      margin-top: -8px
+    }
+  }
+    
+  &__content {
+    width: 93%;
+    max-width: 1340px;
+    margin: 0 auto
+  }
+
+  &__services {
+    max-width: 885px;
+    font-family: "Maison Neue Book", sans-serif;
+    font-weight: 300
+  }
+
+  &__service {
+    display: inline-block;
+    font-size: calc(16px + 12 * (100vw - 320px) / 1160);
+    margin: 8px 4px;
+    padding: 4px 12px;
+    background: #fff;
+    color: #000;
+    border-radius: 16px;
+    @include phone-down {
+        margin: 4px 2px;
+    }
+  }
+}
+

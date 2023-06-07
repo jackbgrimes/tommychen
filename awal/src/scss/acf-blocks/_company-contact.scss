@@ -1,0 +1,54 @@
+
+.contact-us {
+  .container-alt {
+    padding: 0 0 140px;
+    @include phone-down {
+      padding: 0 0 100px
+    }
+  }
+  .contact-container {
+    width: 85%;
+    max-width: 970px;
+    z-index: 2;
+    padding: 50px 7% 0;
+    margin: auto
+  }
+  .lead {
+    margin: 0 0 30px;
+  }
+  ul{
+    &:after {
+      line-height: 0;
+      height: 0;
+      display: block;
+      content: '';
+      clear: both
+    }
+    li {
+      float: left;
+      width: 28%;
+      margin-right: 8%;
+      &:last-child {
+        margin: 0
+      }
+      @include phone-down {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px
+      }
+      p {
+        display: block;
+        font-size: rem(23px);
+        line-height: 1;
+        margin: 0 0 10px;
+        font-weight: bold;
+      }
+      a {
+        line-height: 1.43;
+        letter-spacing: -.1px;
+        color: #22222b;
+        font-family: "Maison Neue Book", sans-serif;
+      }
+    }
+  }
+}

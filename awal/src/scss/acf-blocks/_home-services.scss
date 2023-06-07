@@ -1,0 +1,83 @@
+.services-module-v2 {
+  background: #000;
+  color: #fff;
+  padding: 12% 0;
+  background-image: url(../img/noise-400.gif);
+  background-size: 200px;
+  background-repeat: repeat;
+
+  &__main {
+    display: flex;
+    margin-bottom: 120px;
+    
+    @include phone-down {
+      margin-bottom: 20%;
+    }
+  }
+
+  &__content {
+    margin: auto;
+    width: 93%
+  }
+  
+  &__headline {
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: calc(42px + 22 * (100vw - 320px) / 1120);
+    line-height: calc(42px + 22 * (100vw - 320px) / 1120);
+    font-weight: bold;
+  }
+  
+  &__services {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 550px;
+    span {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 28px;
+      font-weight: normal;
+      color: #000;
+      background: #fff;
+      border-radius: 16px;
+      font-family: 'Maison Neue Book';
+      font-weight: 300;
+      font-size: calc(16px + 12 * (100vw - 320px) / 1160);
+      margin: 8px auto;
+      
+      @include phone-down {
+        .services-module-v2__service span {
+          margin: 4px 2px
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 93%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+      
+    h3 {
+      margin: 0;
+      display: inline;
+      font-size: calc(24px + 11 * (100vw - 320px) / 1160);
+      line-height: calc(36px + 12 * (100vw - 320px) / 1160)
+    }
+
+    h1 {
+      margin: 0;
+      font-size: calc(24px + 11 * (100vw - 320px) / 1160);
+      line-height: calc(36px + 12 * (100vw - 320px) / 1160);
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, .2);
+      padding: 0 8px;
+      border-radius: 18px
+    }
+  }
+}
+
+
+
+
